@@ -9,5 +9,9 @@ outputs:
   time: # id of output
     description: 'The time we greeted you'
 runs:
+  steps:
+    - name: get parameter
+      run: echo ${{ github.event.inputs.who-to-greet}}*******
+
   using: 'node16'
   main: 'index.js'
