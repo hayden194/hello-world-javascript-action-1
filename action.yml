@@ -11,4 +11,4 @@ outputs:
 runs:
 
   using: 'node16'
-  master: 'index.js'
+  main: 'index.js'
