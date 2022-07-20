@@ -36,7 +36,7 @@ async function run () {
   const ocExecArgs = ['clone', '-b', 'master','https://github.com/hayden194/build-source-code'];
 
   //执行登录
-  const exitCode = await ghExec.exec('git.exe', ocExecArgs, finalExecOptions);
+  const exitCode = await ghExec.exec('git', ocExecArgs, finalExecOptions);
   if (exitCode !== 0) {
     let error = `${path.basename(EXECUTABLE)} exited with code ${exitCode}`;
     if (stderr) {
