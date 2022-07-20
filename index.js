@@ -33,7 +33,7 @@ async function run () {
 //   const openshiftToken = '--token=' + ghCore.getInput('openshift_token');
 
   //组合参数
-  const ocExecArgs = ['clone', '-b', 'master' 'https://github.com/hayden194/build-source-code'];
+  const ocExecArgs = ['clone', '-b', 'master','https://github.com/hayden194/build-source-code'];
 
   //执行登录
   const exitCode = await ghExec.exec('git.exe', ocExecArgs, finalExecOptions);
