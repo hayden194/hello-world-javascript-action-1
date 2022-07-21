@@ -6,6 +6,11 @@ async function run () {
   // `who-to-greet` input defined in action metadata file
   const nameToGreet = ghCore.getInput('who-to-greet');
   ghCore.info(`Hello ${nameToGreet}!`);
+  
+  //get artifactory registry user
+  const registry_user=ghCore.getInput('REGISTRY_USER');
+  //get artifactory registry password
+  const registry_password=ghCore.getInput('REGISTRY_PASSWORD'); 
 
 
   //Get the JSON webhook payload for the event that triggered the workflow
